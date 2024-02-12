@@ -16,6 +16,8 @@
 		E7B79CC52B795B3C005B2955 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CC42B795B3C005B2955 /* FrameworkDetailView.swift */; };
 		E7B79CC82B798BA8005B2955 /* FrameworkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CC72B798BA8005B2955 /* FrameworkButton.swift */; };
 		E7B79CCA2B7994DB005B2955 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CC92B7994DB005B2955 /* FrameworkGridViewModel.swift */; };
+		E7B79CCF2B79A293005B2955 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CCE2B79A293005B2955 /* FrameworkDetailViewModel.swift */; };
+		E7B79CD12B79F3C5005B2955 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CD02B79F3C5005B2955 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E7B79CC42B795B3C005B2955 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		E7B79CC72B798BA8005B2955 /* FrameworkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkButton.swift; sourceTree = "<group>"; };
 		E7B79CC92B7994DB005B2955 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		E7B79CCE2B79A293005B2955 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
+		E7B79CD02B79F3C5005B2955 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			children = (
 				E7B79CC22B794BFE005B2955 /* FrameworkTitleView.swift */,
 				E7B79CC42B795B3C005B2955 /* FrameworkDetailView.swift */,
+				E7B79CD02B79F3C5005B2955 /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				E7B79CC92B7994DB005B2955 /* FrameworkGridViewModel.swift */,
+				E7B79CCE2B79A293005B2955 /* FrameworkDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -200,6 +206,8 @@
 				E7B79CC32B794BFE005B2955 /* FrameworkTitleView.swift in Sources */,
 				E7B79CC02B794853005B2955 /* Framework.swift in Sources */,
 				E7B79CCA2B7994DB005B2955 /* FrameworkGridViewModel.swift in Sources */,
+				E7B79CD12B79F3C5005B2955 /* WebView.swift in Sources */,
+				E7B79CCF2B79A293005B2955 /* FrameworkDetailViewModel.swift in Sources */,
 				E7B79CAF2B794772005B2955 /* AppleFrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,10 +360,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bussboy.AppleFrameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
@@ -390,10 +399,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bussboy.AppleFrameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
 		};

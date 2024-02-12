@@ -9,23 +9,27 @@ import SwiftUI
 
 struct FrameworkButton: View {
 	var title: String
+	@Binding var isShowingSafariView: Bool
+	var urlString: String
 	
     var body: some View {
 		Button(action: {
-			
+			isShowingSafariView = true
 		}, label: {
-			Text(title)
-				.font(.title2)
-				.fontWeight(.semibold)
+			Label(title, systemImage: "book.fill")
 		})
-		.frame(width: 250, height: 30)
-		.padding()
-		.background(.red)
-		.foregroundStyle(.white)
-		.clipShape(RoundedRectangle(cornerRadius: 10))
+		.sheet(isPresented: $isShowingSafariView){
+			WebView(url: URL(string: urlString)!)
+		}
+		.buttonStyle(.bordered)
+		.controlSize(.large)
+		.tint(.red)
     }
 }
 
 #Preview {
-	FrameworkButton(title: "Test Button")
+	FrameworkButton(
+		title: "Test Button",
+		isShowingSafariView: .constant(false),
+		urlString: "https://apple.com")
 }

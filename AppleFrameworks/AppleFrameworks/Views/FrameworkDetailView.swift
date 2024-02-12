@@ -9,10 +9,13 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
 	var framework: Framework
+	
 	@Binding var isShowingDetailView: Bool
+	@StateObject private var viewModel = FrameworkDetailViewModel()
+	@State private var isShowingSafariView = false
 	
 	var body: some View {
-		VStack(alignment: .center, spacing: 20) {
+		VStack(alignment: .center, spacing: 10) {
 			HStack {
 				Spacer()
 				Button{
@@ -31,11 +34,18 @@ struct FrameworkDetailView: View {
 			
 			Text(framework.description)
 				.font(.body)
-				.padding()
+				.padding(30)
 			
 			Spacer()
 			
-			FrameworkButton(title: "Learn More")
+			FrameworkButton(
+			title: "Learn More",
+			isShowingSafariView: $viewModel.isShowingSafariView,
+			urlString: framework.urlString
+			)
+		}
+		.sheet(isPresented: $viewModel.isShowingSafariView){
+			
 		}
 		.frame(minWidth: 400, maxWidth: 600, minHeight: 600, maxHeight: 800, alignment: .center)
 		.padding()
