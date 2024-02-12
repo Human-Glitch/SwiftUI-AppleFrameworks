@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct FrameworkTitleView: View {
-	@Binding var framework: Framework
+	var framework: Framework
 	
     var body: some View {
 		VStack{
-			Image($framework.wrappedValue.imageName)
+			Image(framework.imageName)
 				.resizable()
 				.scaledToFit()
 				.frame(width: 100, height: 100, alignment: .center)
 			
-			Text($framework.wrappedValue.name)
+			Text(framework.name)
 				.font(.title2)
 				.fontWeight(.semibold)
 				.scaledToFit()
@@ -28,10 +28,10 @@ struct FrameworkTitleView: View {
 }
 
 #Preview {
-	FrameworkTitleView(framework: .constant(Framework(
+	FrameworkTitleView(framework: Framework(
 		name: "ARKit",
 		imageName: "arkit",
 		urlString: "",
 		description: ""
-	)))
+	))
 }
