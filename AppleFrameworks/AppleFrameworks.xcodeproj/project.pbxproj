@@ -69,7 +69,7 @@
 				E7B79CCB2B7995FA005B2955 /* ViewModels */,
 				E7B79CC62B798B7B005B2955 /* Controls */,
 				E7B79CBD2B794814005B2955 /* Models */,
-				E7B79CBE2B794834005B2955 /* Pages */,
+				E7B79CBE2B794834005B2955 /* Screens */,
 				E7B79CC12B794BCE005B2955 /* Views */,
 				E7B79CB22B794772005B2955 /* Assets.xcassets */,
 				E7B79CB42B794772005B2955 /* AppleFrameworks.entitlements */,
@@ -94,13 +94,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E7B79CBE2B794834005B2955 /* Pages */ = {
+		E7B79CBE2B794834005B2955 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				E7B79CAE2B794772005B2955 /* AppleFrameworksApp.swift */,
 				E7B79CB02B794772005B2955 /* FrameworkGridView.swift */,
 			);
-			path = Pages;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		E7B79CC12B794BCE005B2955 /* Views */ = {

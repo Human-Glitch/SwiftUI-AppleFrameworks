@@ -28,10 +28,6 @@ struct FrameworkTitleView: View {
 }
 
 #Preview {
-	FrameworkTitleView(framework: Framework(
-		name: "ARKit",
-		imageName: "arkit",
-		urlString: "",
-		description: ""
-	))
+	FrameworkTitleView(framework: MockData.sampleFramework
+	)
 }
