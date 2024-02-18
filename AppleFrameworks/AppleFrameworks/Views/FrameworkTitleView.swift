@@ -28,6 +28,5 @@ struct FrameworkTitleView: View {
 }
 
 #Preview {
-	FrameworkTitleView(framework: MockData.sampleFramework
-	)
+	FrameworkTitleView(framework: MockData.sampleFramework)
 }

@@ -15,8 +15,6 @@
 		E7B79CC32B794BFE005B2955 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CC22B794BFE005B2955 /* FrameworkTitleView.swift */; };
 		E7B79CC52B795B3C005B2955 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CC42B795B3C005B2955 /* FrameworkDetailView.swift */; };
 		E7B79CC82B798BA8005B2955 /* FrameworkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CC72B798BA8005B2955 /* FrameworkButton.swift */; };
-		E7B79CCA2B7994DB005B2955 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CC92B7994DB005B2955 /* FrameworkGridViewModel.swift */; };
-		E7B79CCF2B79A293005B2955 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CCE2B79A293005B2955 /* FrameworkDetailViewModel.swift */; };
 		E7B79CD12B79F3C5005B2955 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CD02B79F3C5005B2955 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +29,6 @@
 		E7B79CC22B794BFE005B2955 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 		E7B79CC42B795B3C005B2955 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		E7B79CC72B798BA8005B2955 /* FrameworkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkButton.swift; sourceTree = "<group>"; };
-		E7B79CC92B7994DB005B2955 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
-		E7B79CCE2B79A293005B2955 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 		E7B79CD02B79F3C5005B2955 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +62,6 @@
 		E7B79CAD2B794772005B2955 /* AppleFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E7B79CCB2B7995FA005B2955 /* ViewModels */,
 				E7B79CC62B798B7B005B2955 /* Controls */,
 				E7B79CBD2B794814005B2955 /* Models */,
 				E7B79CBE2B794834005B2955 /* Screens */,
@@ -119,15 +114,6 @@
 				E7B79CC72B798BA8005B2955 /* FrameworkButton.swift */,
 			);
 			path = Controls;
-			sourceTree = "<group>";
-		};
-		E7B79CCB2B7995FA005B2955 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				E7B79CC92B7994DB005B2955 /* FrameworkGridViewModel.swift */,
-				E7B79CCE2B79A293005B2955 /* FrameworkDetailViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +191,7 @@
 				E7B79CB12B794772005B2955 /* FrameworkGridView.swift in Sources */,
 				E7B79CC32B794BFE005B2955 /* FrameworkTitleView.swift in Sources */,
 				E7B79CC02B794853005B2955 /* Framework.swift in Sources */,
-				E7B79CCA2B7994DB005B2955 /* FrameworkGridViewModel.swift in Sources */,
 				E7B79CD12B79F3C5005B2955 /* WebView.swift in Sources */,
-				E7B79CCF2B79A293005B2955 /* FrameworkDetailViewModel.swift in Sources */,
 				E7B79CAF2B794772005B2955 /* AppleFrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

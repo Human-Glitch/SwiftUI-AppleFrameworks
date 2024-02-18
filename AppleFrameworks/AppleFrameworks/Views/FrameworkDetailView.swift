@@ -10,26 +10,8 @@ import SwiftUI
 struct FrameworkDetailView: View {
 	var framework: Framework
 	
-	@Binding var isShowingDetailView: Bool
-	@StateObject private var viewModel = FrameworkDetailViewModel()
-	@State private var isShowingSafariView = false
-	
 	var body: some View {
 		VStack(alignment: .center, spacing: 10) {
-			HStack {
-				Spacer()
-				Button{
-					isShowingDetailView = false
-				} label: {
-					Image(systemName: "xmark")
-						.foregroundColor(.primary)
-						.imageScale(.large)
-						.frame(width: 44, height: 44)
-				}
-			}
-			
-			Spacer()
-			
 			FrameworkTitleView(framework: framework)
 			
 			Text(framework.description)
@@ -39,13 +21,9 @@ struct FrameworkDetailView: View {
 			Spacer()
 			
 			FrameworkButton(
-			title: "Learn More",
-			isShowingSafariView: $viewModel.isShowingSafariView,
-			urlString: framework.urlString
+				title: "Learn More",
+				urlString: framework.urlString
 			)
-		}
-		.sheet(isPresented: $viewModel.isShowingSafariView){
-			
 		}
 		.frame(minWidth: 400, maxWidth: 600, minHeight: 600, maxHeight: 800, alignment: .center)
 		.padding()
@@ -54,7 +32,6 @@ struct FrameworkDetailView: View {
 
 #Preview {
 	FrameworkDetailView(
-		framework: MockData.sampleFramework,
-		isShowingDetailView: .constant(true))
+		framework: MockData.sampleFramework)
 	.preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }

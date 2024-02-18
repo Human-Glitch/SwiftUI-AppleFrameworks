@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Framework: Identifiable
+struct Framework: Identifiable, Hashable
 {
-	init(){
+	init(){	
 		self.name = ""
 		self.imageName = ""
 		self.urlString = ""
