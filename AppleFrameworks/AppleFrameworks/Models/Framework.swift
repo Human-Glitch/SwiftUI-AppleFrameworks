@@ -9,8 +9,6 @@ import Foundation
 
 struct Framework: Identifiable
 {
-	
-	
 	init(){
 		self.name = ""
 		self.imageName = ""
@@ -43,16 +41,40 @@ struct MockData {
 	
 	static let frameworks = [
 		Framework(
+			name: "Accessibility",
+			imageName: "accessibility",
+			urlString: "https://developer.apple.com/documentation/accessibility",
+			description: "Accessibility features help a wide range of people interact with their devices. For many, accessibility is a necessity. For others, it’s a practicality. For example, closed captions can be necessary for someone who is deaf or hard of hearing, but also useful for someone watching a video in a noisy environment.\n\nWhether you’re developing a new app, or updating an existing one, consider the needs of all the people who might use your app. People can personalize their devices by choosing which accessibility features give them the best user experience."),
+		
+		Framework(
+			name: "ActivityKit",
+			imageName: "activitykit",
+			urlString: "https://developer.apple.com/documentation/activitykit",
+			description: "With the ActivityKit framework, you can start a Live Activity to share live updates from your app in the Dynamic Island and on the Lock Screen. Especially for apps that push the limit of notifications to provide updated information, Live Activities can offer a richer, interactive and highly glanceable way for people to keep track of an event or activity over a couple of hours. For example, a sports app might start a Live Activity that makes live information available at a glance for the duration of a game."),
+		
+		Framework(
 			name: "App Clips",
 			imageName: "app-clip",
 			urlString: "https://developer.apple.com/app-clips",
 			description: "App Clips are a great way for users to quickly access and experience what your app has to offer. An App Clip is a small part of your app that’s discoverable at the moment it’s needed. App Clips are fast and lightweight so a user can open them quickly.\n\nWhether they're ordering take-out from a restaurant, renting a scooter, or setting up a new connected appliance for the first time, users will be able to start and finish an experience from your app in seconds. And when they’re done, you can offer the opportunity to download your full app from the App Store."),
 		
 		Framework(
+			name: "AppKit",
+			imageName: "appkit",
+			urlString: "https://developer.apple.com/documentation/appkit",
+			description: "AppKit contains the objects you need to build the user interface for a macOS app. In addition to drawing windows, buttons, panels, and text fields, it handles all the event management and interaction between your app, people, and macOS.\n\nAside from drawing and managing interactions, AppKit handles printing, animating, as well as creating documents with large amounts of data efficiently. The framework also contains built-in support for localization and accessibility to ensure that your app reaches as many people as possible."),
+		
+		Framework(
 			name: "ARKit",
 			imageName: "arkit",
 			urlString: "https://developer.apple.com/augmented-reality/arkit",
-			description: "ARKit 4 introduces a brand-new Depth API, creating a new way to access the detailed depth information gathered by the LiDAR Scanner on iPhone 12 Pro, iPhone 12 Pro Max, and iPad Pro.\n\nLocation Anchors leverages the higher-resolution data in Apple Maps to place AR experiences at a specific point in the world in your iPhone and iPad apps. And support for face tracking extends to all devices with the Apple Neural Engine and a front-facing camera, so even more users can experience the joy of AR in photos and videos."),
+			description: "ARKit 6 introduces 4K video, so you can capture stunning high-resolution videos of AR experiences — perfect for professional video editing, film production, social media apps, and more. Video and capture capabilities are expanded with support for HDR video and high-resolution background image capture. ARKit 6 also brings Location Anchors to new cities, such as Montreal, Sydney, Singapore, and Tokyo, and it features improvements to Motion Capture."),
+		
+		Framework(
+			name: "AVFoundation",
+			imageName: "avfoundation",
+			urlString: "https://developer.apple.com/documentation/avfoundation",
+			description: "AVFoundation combines several major technology areas that together encompass a wide range of tasks for inspecting, playing, capturing, and processing audiovisual media on Apple platforms."),
 		
 		Framework(
 			name: "CarPlay",
@@ -91,10 +113,34 @@ struct MockData {
 			description: "Integrate HealthKit into your health and fitness apps for iOS and watchOS to create a more seamless user experience.\n\nWhen a customer provides permission for your app to read and write health and activity data to their Health app, your app becomes a valuable data source and can deliver deeply informed health and fitness solutions."),
 		
 		Framework(
+			name: "HomeKit",
+			imageName: "homekit",
+			urlString: "https://developer.apple.com/design/human-interface-guidelines/homekit/",
+			description: "HomeKit lets people securely control connected accessories in their homes using Siri or the Home app on iPhone, iPad, Apple Watch, and Mac."),
+		
+		Framework(
 			name: "Metal",
 			imageName: "metal",
 			urlString: "https://developer.apple.com/metal",
 			description: "Metal provides near-direct access to the graphics processing unit (GPU), enabling you to maximize the graphics and compute potential of your apps on iOS, macOS, and tvOS.\n\nBuilding on an approachable, low-overhead architecture with precompiled GPU shaders, fine-grained resource control, and multithreading support, Metal further evolves support for GPU-driven command creation, simplifies working with the array of Metal-capable GPUs, and lets you tap into Pro power of Mac Pro and Pro Display XDR."),
+		
+		Framework(
+			name: "PencilKit",
+			imageName: "pencilkit",
+			urlString: "https://developer.apple.com/documentation/pencilkit",
+			description: "PencilKit makes it easy to incorporate hand-drawn content into your iPadOS or macOS apps. PencilKit provides a drawing environment for your iOS app that receives input from Apple Pencil or the user’s finger, and turns it into images you display in iPadOS, iOS, or macOS. The environment comes with tools for creating, erasing, and selecting lines."),
+		
+		Framework(
+			name: "RealityKit",
+			imageName: "realitykit",
+			urlString: "https://developer.apple.com/documentation/realitykit",
+			description: "RealityKit provides high-performance 3D simulation and rendering capabilities you can use to create visionOS apps or to create augmented reality (AR) apps for iOS, macOS, and tvOS. RealityKit is an AR-first 3D framework that leverages ARKit to seamlessly integrate virtual objects into the real world."),
+		
+		Framework(
+			name: "SceneKit",
+			imageName: "scenekit",
+			urlString: "https://developer.apple.com/documentation/scenekit",
+			description: "SceneKit combines a high-performance rendering engine with a descriptive API for import, manipulation, and rendering of 3D assets. Unlike lower-level APIs such as Metal and OpenGL that require you to implement in precise detail the rendering algorithms that display a scene, SceneKit requires only descriptions of your scene’s contents and the actions or animations you want it to perform."),
 		
 		Framework(
 			name: "SF Symbols",
@@ -115,6 +161,12 @@ struct MockData {
 			description: "The SpriteKit framework makes it easy to create high-performance, battery-efficient 2D games.\n\nWith support for custom OpenGL ES shaders and lighting, integration with SceneKit, and advanced new physics effects and animations, you can add force fields, detect collisions, and generate new lighting effects in your games."),
 		
 		Framework(
+			name: "SwiftData",
+			imageName: "swiftdata",
+			urlString: "https://developer.apple.com/documentation/swiftdata",
+			description: "Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies. Using modern language features like macros, SwiftData enables you to write code that is fast, efficient, and safe, enabling you to describe the entire model layer (or object graph) for your app. The framework handles storing the underlying model data, and optionally, syncing that data across multiple devices."),
+		
+		Framework(
 			name: "SwiftUI",
 			imageName: "swiftui",
 			urlString: "https://developer.apple.com/xcode/swiftui",
@@ -125,6 +177,12 @@ struct MockData {
 			imageName: "test-flight",
 			urlString: "https://developer.apple.com/testflight",
 			description: "TestFlight makes it easy to invite users to test your apps and app clip experiences and collect valuable feedback before releasing your apps on the App Store.\n\nYou can invite up to 10,000 testers using just their email address or by sharing a public link."),
+		
+		Framework(
+			name: "UIKit",
+			imageName: "uikit",
+			urlString: "https://developer.apple.com/documentation/uikit",
+			description: "UIKit provides a variety of features for building apps, including components you can use to construct the core infrastructure of your iOS, iPadOS, or tvOS apps. The framework provides the window and view architecture for implementing your UI, the event-handling infrastructure for delivering Multi-Touch and other types of input to your app, and the main run loop for managing interactions between the user, the system, and your app.\n\nUIKit also includes support for animations, documents, drawing and printing, text management and display, search, app extensions, resource management, and getting information about the current device. You can also customize accessibility support, and localize your app’s interface for different languages, countries, or cultural regions."),
 		
 		Framework(
 			name: "Wallet",
